@@ -68,7 +68,7 @@ function loadSelected(){
     }).then( (data) => {
         let p = document.getElementById("selectionLoad");
         console.log(data);
-        p.innerHTML = JSON.stringify(data);
+        p.innerHTML = JSON.stringify("Title: " + data.title + " ,Url: " + data.url + " ,Episode_id: " + data.episode_id + " ,Director: " + data.director );
     })
 }
 
